@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo</title>
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Handlee">
+    <script src="../src/main.js" defer> </script>
+</head>
+<body>
+    <div id="backdrop"></div>
+    <div id="rules-window">
+        <p>Turn over any two cards. </br>
+            If they match, they will stay opened. </br>
+        If they don't they will turn back over, but you can try to memorize their positions. </br>
+        Find all pairs using as less steps as you can.</p>
+        <button>Ok</button>
+    </div>
+    <header>
+        <p>MEMO GAME</p>
+        <div class="level-block">
+            <label for="levels">Level:</label>
+            <select name="levels" id="levels">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="designer">I'm designer</option>
+            </select>
+            <button for="levels" id="selected-levels">Start</button>
+        </div>
+        
+    </header>
+    <div id="greet">
+        <img src="./assets/UI/mr-memo.png" id="memo-greet">
+        <p id="memo-greet-text">Do you wanna play? Pick a level and click "Start"!</p>
+    </div>
+    <div id="cards"></div>
+    <div id="helper">
+        <img src="./assets/UI/mr-memo.png" id="memo-helper">
+        <p id="memo-helper-text"></p>  
+    </div>
+</body>
+</html>

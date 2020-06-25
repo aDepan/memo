@@ -1,0 +1,113 @@
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "assets/scripts/";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./util */ \"./src/util.js\");\n\r\n\r\nconst startGameBtn = document.getElementById('selected-levels');\r\n\r\nstartGameBtn.addEventListener('click', _util__WEBPACK_IMPORTED_MODULE_0__[\"renderCardsSet\"]);\r\n\r\nexports.renderCardsSet = _util__WEBPACK_IMPORTED_MODULE_0__[\"renderCardsSet\"];\r\n\r\n\r\n\r\n\r\n\r\n\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvbWFpbi5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9tYWluLmpzPzU2ZDciXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgcmVuZGVyQ2FyZHNTZXQgfSBmcm9tICcuL3V0aWwnO1xyXG5cclxuY29uc3Qgc3RhcnRHYW1lQnRuID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3NlbGVjdGVkLWxldmVscycpO1xyXG5cclxuc3RhcnRHYW1lQnRuLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgcmVuZGVyQ2FyZHNTZXQpO1xyXG5cclxuZXhwb3J0cy5yZW5kZXJDYXJkc1NldCA9IHJlbmRlckNhcmRzU2V0O1xyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/main.js\n");
+
+/***/ }),
+
+/***/ "./src/util.js":
+/*!*********************!*\
+  !*** ./src/util.js ***!
+  \*********************/
+/*! exports provided: renderCardsSet */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderCardsSet\", function() { return renderCardsSet; });\nconst cardsSet = document.getElementById('cards');\r\n\r\nconst levelElement = document.getElementById('levels');\r\nconst greetElement = document.getElementById('greet');\r\nconst helperElement = document.getElementById('helper');\r\nconst backdropElement = document.getElementById('backdrop');\r\nconst rulesWindow = document.getElementById('rules-window');\r\n\r\n\r\n\r\nconst basicSet=[\"red\", \"yellow\", \"blue\", \"pink\", \"green\", \"lightblue\", \"brown\", \"darkgreen\", \"purple\", \"lime\"];\r\nconst designerSet=[\"green0\", \"green1\", \"green2\", \"green3\", \"green4\", \"green5\", \"green6\", \"green7\", \"green8\", \"green9\"];\r\n\r\nconst newColorsSet=[];\r\nlet considerCards = [];\r\nlet cards;\r\n\r\nlet numberOfPairs;\r\nlet confirmedPairs = 0;\r\nlet numberOfSteps = 0;\r\n\r\nconst showRules = () => {\r\n    const confirmRulesBtn = document.querySelector('#rules-window button');\r\n    backdropElement.style.display=\"block\";\r\n    rulesWindow.style.display=\"block\";\r\n    backdropElement.addEventListener('click', hideRulesWindow);\r\n    confirmRulesBtn.addEventListener('click', hideRulesWindow);\r\n}\r\n\r\nconst pickLevel = (level) => {\r\n    let pairs;\r\n    let colors = 'basic';\r\n    switch (level) {\r\n        case 'easy': \r\n            pairs = 4;\r\n            break;    \r\n        case 'medium': \r\n            pairs = 6;\r\n            break;       \r\n        case 'hard': \r\n            pairs = 10;\r\n            break;\r\n        case 'designer':\r\n            pairs = 10;\r\n            colors = 'design';\r\n            break;\r\n        default: \r\n            pairs = 4;\r\n    }\r\n    return [pairs, colors];\r\n}\r\n\r\nconst pickColorset = (name) => {\r\n    let colorset;\r\n    if (name === 'design') {\r\n        colorset = designerSet;\r\n        helperTexts('designerMode');\r\n    } else {\r\n        colorset = basicSet;\r\n    }\r\n    return colorset;\r\n}\r\n\r\n\r\nconst cleanParent = (parentEl) => {\r\n    while (parentEl.firstChild) {\r\n        parentEl.removeChild(parentEl.firstChild)\r\n      }\r\n}\r\n\r\nfunction renderCardsSet () {\r\n    cards = null;\r\n    helperTexts(\"rules\");\r\n    greetElement.style.display = \"none\";\r\n    helperElement.style.display = \"block\";\r\n\r\n    if (cardsSet.firstChild) {\r\n        helperTexts(\"again\");\r\n        cleanParent(cardsSet);\r\n    }\r\n\r\n    let level = levelElement.value;\r\n    const newGameSet = pickLevel(level);\r\n    \r\n    numberOfPairs = newGameSet[0];\r\n    let colorset = pickColorset(newGameSet[1]);\r\n\r\n    if (numberOfPairs > 8) {\r\n        cardsSet.style.gridTemplateColumns=`repeat(5, 130px)`;\r\n    } else {\r\n        cardsSet.style.gridTemplateColumns=`repeat(4, 130px)`;\r\n    }\r\n        \r\n    for (let j=1; j<=numberOfPairs*2; j++) {\r\n        const card = document.createElement('div');\r\n        card.classList.add('card','backside');\r\n        card.classList.add('card');\r\n        card.setAttribute(\"id\", j);\r\n        cardsSet.appendChild(card);\r\n    }\r\n    \r\n    cards = document.querySelectorAll(\".card\");\r\n    cards.forEach(el => el.addEventListener('click', toggleCard.bind(null, el)));\r\n\r\n    randomColor(colorset);\r\n\r\n    numberOfSteps = 0;\r\n    confirmedPairs = 0;\r\n}\r\n\r\nconst randomColor = (colorsetName) => {\r\n    newColorsSet.length = 0;\r\n    let cardColor;\r\n    while (newColorsSet.length<numberOfPairs*2) {\r\n        let coef = Math.random() * (numberOfPairs - 1);\r\n        coef = coef.toFixed(0);\r\n        cardColor = colorsetName[coef];\r\n        let amountCard = newColorsSet.filter(clr => clr==cardColor).length;\r\n        if (amountCard < 2) {\r\n            newColorsSet.push(cardColor);\r\n        }\r\n    }\r\n}\r\n\r\nconst toggleCard = (element) => {\r\n    let elId = element.getAttribute(\"id\");\r\n    if (element.classList.contains(\"confirmed\")) {\r\n        return;\r\n    }\r\n\r\n    cards[elId-1].classList.add(newColorsSet[elId-1] +\"-card\");\r\n    cards[elId-1].classList.remove(\"backside\");\r\n    considerCards.push(cards[elId-1]);\r\n    //console.log(considerCards[0].id);\r\n\r\n    //console.log(considerCards);\r\n    if (considerCards.length === 2) {\r\n            //console.log(considerCards);\r\n            numberOfSteps++;\r\n            let card1 = document.getElementById(considerCards[0].id);\r\n            let card2 = document.getElementById(considerCards[1].id);\r\n            if (considerCards[0].classList.value === considerCards[1].classList.value){\r\n                if (considerCards[0].id !== considerCards[1].id) {\r\n                    card1.classList.add(\"confirmed\");\r\n                    card2.classList.add(\"confirmed\");\r\n                    considerCards = [];\r\n                    confirmedPairs++;\r\n                } else {\r\n                    considerCards.pop();\r\n                }\r\n            } else {\r\n                considerCards = [];\r\n                setTimeout(() => {\r\n                    card1.className = \"card backside\";\r\n                    card2.className = \"card backside\";\r\n                }, 800)\r\n            }\r\n    }\r\n    if (confirmedPairs === numberOfPairs) {\r\n        helperTexts(\"win\");\r\n    }\r\n}\r\n\r\nconst hideRulesWindow = () => {\r\n    backdropElement.style.display = \"none\";\r\n    rulesWindow.style.display = \"none\";\r\n}\r\n\r\n\r\nconst helperTexts = (gameEvent) => {\r\n    let helperText = document.getElementById('memo-helper-text');\r\n    switch (gameEvent) {\r\n        case \"rules\": \r\n            helperText.textContent = \"Do you know how to play? \\n No? Click me!\";\r\n            helperElement.addEventListener('click', showRules);\r\n            break;\r\n        case \"win\":\r\n            helperElement.removeEventListener('click',showRules);\r\n            helperText.textContent = `Congrats! You've found all pairs! \\n It took ${numberOfSteps} steps for you.`;\r\n            helperElement.style.display = \"none\";\r\n            setTimeout(() => {\r\n                helperElement.style.display = \"block\";\r\n            }, 5)   \r\n            break;\r\n        case \"again\":\r\n            helperText.textContent = \"You can do it!\";\r\n            break;\r\n        case \"designerMode\":\r\n            helperText.textContent = \"Find all green cards!\";\r\n            break;\r\n        default:\r\n            helperText.textContent = \"Hi! I'm mr.Memo. Let's play!\";\r\n    }\r\n\r\n}\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvdXRpbC5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy91dGlsLmpzP2UwZWIiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgY2FyZHNTZXQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY2FyZHMnKTtcclxuXHJcbmNvbnN0IGxldmVsRWxlbWVudCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdsZXZlbHMnKTtcclxuY29uc3QgZ3JlZXRFbGVtZW50ID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2dyZWV0Jyk7XHJcbmNvbnN0IGhlbHBlckVsZW1lbnQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnaGVscGVyJyk7XHJcbmNvbnN0IGJhY2tkcm9wRWxlbWVudCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdiYWNrZHJvcCcpO1xyXG5jb25zdCBydWxlc1dpbmRvdyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdydWxlcy13aW5kb3cnKTtcclxuXHJcblxyXG5cclxuY29uc3QgYmFzaWNTZXQ9W1wicmVkXCIsIFwieWVsbG93XCIsIFwiYmx1ZVwiLCBcInBpbmtcIiwgXCJncmVlblwiLCBcImxpZ2h0Ymx1ZVwiLCBcImJyb3duXCIsIFwiZGFya2dyZWVuXCIsIFwicHVycGxlXCIsIFwibGltZVwiXTtcclxuY29uc3QgZGVzaWduZXJTZXQ9W1wiZ3JlZW4wXCIsIFwiZ3JlZW4xXCIsIFwiZ3JlZW4yXCIsIFwiZ3JlZW4zXCIsIFwiZ3JlZW40XCIsIFwiZ3JlZW41XCIsIFwiZ3JlZW42XCIsIFwiZ3JlZW43XCIsIFwiZ3JlZW44XCIsIFwiZ3JlZW45XCJdO1xyXG5cclxuY29uc3QgbmV3Q29sb3JzU2V0PVtdO1xyXG5sZXQgY29uc2lkZXJDYXJkcyA9IFtdO1xyXG5sZXQgY2FyZHM7XHJcblxyXG5sZXQgbnVtYmVyT2ZQYWlycztcclxubGV0IGNvbmZpcm1lZFBhaXJzID0gMDtcclxubGV0IG51bWJlck9mU3RlcHMgPSAwO1xyXG5cclxuY29uc3Qgc2hvd1J1bGVzID0gKCkgPT4ge1xyXG4gICAgY29uc3QgY29uZmlybVJ1bGVzQnRuID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI3J1bGVzLXdpbmRvdyBidXR0b24nKTtcclxuICAgIGJhY2tkcm9wRWxlbWVudC5zdHlsZS5kaXNwbGF5PVwiYmxvY2tcIjtcclxuICAgIHJ1bGVzV2luZG93LnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xyXG4gICAgYmFja2Ryb3BFbGVtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgaGlkZVJ1bGVzV2luZG93KTtcclxuICAgIGNvbmZpcm1SdWxlc0J0bi5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGhpZGVSdWxlc1dpbmRvdyk7XHJcbn1cclxuXHJcbmNvbnN0IHBpY2tMZXZlbCA9IChsZXZlbCkgPT4ge1xyXG4gICAgbGV0IHBhaXJzO1xyXG4gICAgbGV0IGNvbG9ycyA9ICdiYXNpYyc7XHJcbiAgICBzd2l0Y2ggKGxldmVsKSB7XHJcbiAgICAgICAgY2FzZSAnZWFzeSc6IFxyXG4gICAgICAgICAgICBwYWlycyA9IDQ7XHJcbiAgICAgICAgICAgIGJyZWFrOyAgICBcclxuICAgICAgICBjYXNlICdtZWRpdW0nOiBcclxuICAgICAgICAgICAgcGFpcnMgPSA2O1xyXG4gICAgICAgICAgICBicmVhazsgICAgICAgXHJcbiAgICAgICAgY2FzZSAnaGFyZCc6IFxyXG4gICAgICAgICAgICBwYWlycyA9IDEwO1xyXG4gICAgICAgICAgICBicmVhaztcclxuICAgICAgICBjYXNlICdkZXNpZ25lcic6XHJcbiAgICAgICAgICAgIHBhaXJzID0gMTA7XHJcbiAgICAgICAgICAgIGNvbG9ycyA9ICdkZXNpZ24nO1xyXG4gICAgICAgICAgICBicmVhaztcclxuICAgICAgICBkZWZhdWx0OiBcclxuICAgICAgICAgICAgcGFpcnMgPSA0O1xyXG4gICAgfVxyXG4gICAgcmV0dXJuIFtwYWlycywgY29sb3JzXTtcclxufVxyXG5cclxuY29uc3QgcGlja0NvbG9yc2V0ID0gKG5hbWUpID0+IHtcclxuICAgIGxldCBjb2xvcnNldDtcclxuICAgIGlmIChuYW1lID09PSAnZGVzaWduJykge1xyXG4gICAgICAgIGNvbG9yc2V0ID0gZGVzaWduZXJTZXQ7XHJcbiAgICAgICAgaGVscGVyVGV4dHMoJ2Rlc2lnbmVyTW9kZScpO1xyXG4gICAgfSBlbHNlIHtcclxuICAgICAgICBjb2xvcnNldCA9IGJhc2ljU2V0O1xyXG4gICAgfVxyXG4gICAgcmV0dXJuIGNvbG9yc2V0O1xyXG59XHJcblxyXG5cclxuY29uc3QgY2xlYW5QYXJlbnQgPSAocGFyZW50RWwpID0+IHtcclxuICAgIHdoaWxlIChwYXJlbnRFbC5maXJzdENoaWxkKSB7XHJcbiAgICAgICAgcGFyZW50RWwucmVtb3ZlQ2hpbGQocGFyZW50RWwuZmlyc3RDaGlsZClcclxuICAgICAgfVxyXG59XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gcmVuZGVyQ2FyZHNTZXQgKCkge1xyXG4gICAgY2FyZHMgPSBudWxsO1xyXG4gICAgaGVscGVyVGV4dHMoXCJydWxlc1wiKTtcclxuICAgIGdyZWV0RWxlbWVudC5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XHJcbiAgICBoZWxwZXJFbGVtZW50LnN0eWxlLmRpc3BsYXkgPSBcImJsb2NrXCI7XHJcblxyXG4gICAgaWYgKGNhcmRzU2V0LmZpcnN0Q2hpbGQpIHtcclxuICAgICAgICBoZWxwZXJUZXh0cyhcImFnYWluXCIpO1xyXG4gICAgICAgIGNsZWFuUGFyZW50KGNhcmRzU2V0KTtcclxuICAgIH1cclxuXHJcbiAgICBsZXQgbGV2ZWwgPSBsZXZlbEVsZW1lbnQudmFsdWU7XHJcbiAgICBjb25zdCBuZXdHYW1lU2V0ID0gcGlja0xldmVsKGxldmVsKTtcclxuICAgIFxyXG4gICAgbnVtYmVyT2ZQYWlycyA9IG5ld0dhbWVTZXRbMF07XHJcbiAgICBsZXQgY29sb3JzZXQgPSBwaWNrQ29sb3JzZXQobmV3R2FtZVNldFsxXSk7XHJcblxyXG4gICAgaWYgKG51bWJlck9mUGFpcnMgPiA4KSB7XHJcbiAgICAgICAgY2FyZHNTZXQuc3R5bGUuZ3JpZFRlbXBsYXRlQ29sdW1ucz1gcmVwZWF0KDUsIDEzMHB4KWA7XHJcbiAgICB9IGVsc2Uge1xyXG4gICAgICAgIGNhcmRzU2V0LnN0eWxlLmdyaWRUZW1wbGF0ZUNvbHVtbnM9YHJlcGVhdCg0LCAxMzBweClgO1xyXG4gICAgfVxyXG4gICAgICAgIFxyXG4gICAgZm9yIChsZXQgaj0xOyBqPD1udW1iZXJPZlBhaXJzKjI7IGorKykge1xyXG4gICAgICAgIGNvbnN0IGNhcmQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdkaXYnKTtcclxuICAgICAgICBjYXJkLmNsYXNzTGlzdC5hZGQoJ2NhcmQnLCdiYWNrc2lkZScpO1xyXG4gICAgICAgIGNhcmQuY2xhc3NMaXN0LmFkZCgnY2FyZCcpO1xyXG4gICAgICAgIGNhcmQuc2V0QXR0cmlidXRlKFwiaWRcIiwgaik7XHJcbiAgICAgICAgY2FyZHNTZXQuYXBwZW5kQ2hpbGQoY2FyZCk7XHJcbiAgICB9XHJcbiAgICBcclxuICAgIGNhcmRzID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbChcIi5jYXJkXCIpO1xyXG4gICAgY2FyZHMuZm9yRWFjaChlbCA9PiBlbC5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIHRvZ2dsZUNhcmQuYmluZChudWxsLCBlbCkpKTtcclxuXHJcbiAgICByYW5kb21Db2xvcihjb2xvcnNldCk7XHJcblxyXG4gICAgbnVtYmVyT2ZTdGVwcyA9IDA7XHJcbiAgICBjb25maXJtZWRQYWlycyA9IDA7XHJcbn1cclxuXHJcbmNvbnN0IHJhbmRvbUNvbG9yID0gKGNvbG9yc2V0TmFtZSkgPT4ge1xyXG4gICAgbmV3Q29sb3JzU2V0Lmxlbmd0aCA9IDA7XHJcbiAgICBsZXQgY2FyZENvbG9yO1xyXG4gICAgd2hpbGUgKG5ld0NvbG9yc1NldC5sZW5ndGg8bnVtYmVyT2ZQYWlycyoyKSB7XHJcbiAgICAgICAgbGV0IGNvZWYgPSBNYXRoLnJhbmRvbSgpICogKG51bWJlck9mUGFpcnMgLSAxKTtcclxuICAgICAgICBjb2VmID0gY29lZi50b0ZpeGVkKDApO1xyXG4gICAgICAgIGNhcmRDb2xvciA9IGNvbG9yc2V0TmFtZVtjb2VmXTtcclxuICAgICAgICBsZXQgYW1vdW50Q2FyZCA9IG5ld0NvbG9yc1NldC5maWx0ZXIoY2xyID0+IGNscj09Y2FyZENvbG9yKS5sZW5ndGg7XHJcbiAgICAgICAgaWYgKGFtb3VudENhcmQgPCAyKSB7XHJcbiAgICAgICAgICAgIG5ld0NvbG9yc1NldC5wdXNoKGNhcmRDb2xvcik7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59XHJcblxyXG5jb25zdCB0b2dnbGVDYXJkID0gKGVsZW1lbnQpID0+IHtcclxuICAgIGxldCBlbElkID0gZWxlbWVudC5nZXRBdHRyaWJ1dGUoXCJpZFwiKTtcclxuICAgIGlmIChlbGVtZW50LmNsYXNzTGlzdC5jb250YWlucyhcImNvbmZpcm1lZFwiKSkge1xyXG4gICAgICAgIHJldHVybjtcclxuICAgIH1cclxuXHJcbiAgICBjYXJkc1tlbElkLTFdLmNsYXNzTGlzdC5hZGQobmV3Q29sb3JzU2V0W2VsSWQtMV0gK1wiLWNhcmRcIik7XHJcbiAgICBjYXJkc1tlbElkLTFdLmNsYXNzTGlzdC5yZW1vdmUoXCJiYWNrc2lkZVwiKTtcclxuICAgIGNvbnNpZGVyQ2FyZHMucHVzaChjYXJkc1tlbElkLTFdKTtcclxuICAgIC8vY29uc29sZS5sb2coY29uc2lkZXJDYXJkc1swXS5pZCk7XHJcblxyXG4gICAgLy9jb25zb2xlLmxvZyhjb25zaWRlckNhcmRzKTtcclxuICAgIGlmIChjb25zaWRlckNhcmRzLmxlbmd0aCA9PT0gMikge1xyXG4gICAgICAgICAgICAvL2NvbnNvbGUubG9nKGNvbnNpZGVyQ2FyZHMpO1xyXG4gICAgICAgICAgICBudW1iZXJPZlN0ZXBzKys7XHJcbiAgICAgICAgICAgIGxldCBjYXJkMSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGNvbnNpZGVyQ2FyZHNbMF0uaWQpO1xyXG4gICAgICAgICAgICBsZXQgY2FyZDIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChjb25zaWRlckNhcmRzWzFdLmlkKTtcclxuICAgICAgICAgICAgaWYgKGNvbnNpZGVyQ2FyZHNbMF0uY2xhc3NMaXN0LnZhbHVlID09PSBjb25zaWRlckNhcmRzWzFdLmNsYXNzTGlzdC52YWx1ZSl7XHJcbiAgICAgICAgICAgICAgICBpZiAoY29uc2lkZXJDYXJkc1swXS5pZCAhPT0gY29uc2lkZXJDYXJkc1sxXS5pZCkge1xyXG4gICAgICAgICAgICAgICAgICAgIGNhcmQxLmNsYXNzTGlzdC5hZGQoXCJjb25maXJtZWRcIik7XHJcbiAgICAgICAgICAgICAgICAgICAgY2FyZDIuY2xhc3NMaXN0LmFkZChcImNvbmZpcm1lZFwiKTtcclxuICAgICAgICAgICAgICAgICAgICBjb25zaWRlckNhcmRzID0gW107XHJcbiAgICAgICAgICAgICAgICAgICAgY29uZmlybWVkUGFpcnMrKztcclxuICAgICAgICAgICAgICAgIH0gZWxzZSB7XHJcbiAgICAgICAgICAgICAgICAgICAgY29uc2lkZXJDYXJkcy5wb3AoKTtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgfSBlbHNlIHtcclxuICAgICAgICAgICAgICAgIGNvbnNpZGVyQ2FyZHMgPSBbXTtcclxuICAgICAgICAgICAgICAgIHNldFRpbWVvdXQoKCkgPT4ge1xyXG4gICAgICAgICAgICAgICAgICAgIGNhcmQxLmNsYXNzTmFtZSA9IFwiY2FyZCBiYWNrc2lkZVwiO1xyXG4gICAgICAgICAgICAgICAgICAgIGNhcmQyLmNsYXNzTmFtZSA9IFwiY2FyZCBiYWNrc2lkZVwiO1xyXG4gICAgICAgICAgICAgICAgfSwgODAwKVxyXG4gICAgICAgICAgICB9XHJcbiAgICB9XHJcbiAgICBpZiAoY29uZmlybWVkUGFpcnMgPT09IG51bWJlck9mUGFpcnMpIHtcclxuICAgICAgICBoZWxwZXJUZXh0cyhcIndpblwiKTtcclxuICAgIH1cclxufVxyXG5cclxuY29uc3QgaGlkZVJ1bGVzV2luZG93ID0gKCkgPT4ge1xyXG4gICAgYmFja2Ryb3BFbGVtZW50LnN0eWxlLmRpc3BsYXkgPSBcIm5vbmVcIjtcclxuICAgIHJ1bGVzV2luZG93LnN0eWxlLmRpc3BsYXkgPSBcIm5vbmVcIjtcclxufVxyXG5cclxuXHJcbmNvbnN0IGhlbHBlclRleHRzID0gKGdhbWVFdmVudCkgPT4ge1xyXG4gICAgbGV0IGhlbHBlclRleHQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnbWVtby1oZWxwZXItdGV4dCcpO1xyXG4gICAgc3dpdGNoIChnYW1lRXZlbnQpIHtcclxuICAgICAgICBjYXNlIFwicnVsZXNcIjogXHJcbiAgICAgICAgICAgIGhlbHBlclRleHQudGV4dENvbnRlbnQgPSBcIkRvIHlvdSBrbm93IGhvdyB0byBwbGF5PyBcXG4gTm8/IENsaWNrIG1lIVwiO1xyXG4gICAgICAgICAgICBoZWxwZXJFbGVtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgc2hvd1J1bGVzKTtcclxuICAgICAgICAgICAgYnJlYWs7XHJcbiAgICAgICAgY2FzZSBcIndpblwiOlxyXG4gICAgICAgICAgICBoZWxwZXJFbGVtZW50LnJlbW92ZUV2ZW50TGlzdGVuZXIoJ2NsaWNrJyxzaG93UnVsZXMpO1xyXG4gICAgICAgICAgICBoZWxwZXJUZXh0LnRleHRDb250ZW50ID0gYENvbmdyYXRzISBZb3UndmUgZm91bmQgYWxsIHBhaXJzISBcXG4gSXQgdG9vayAke251bWJlck9mU3RlcHN9IHN0ZXBzIGZvciB5b3UuYDtcclxuICAgICAgICAgICAgaGVscGVyRWxlbWVudC5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XHJcbiAgICAgICAgICAgIHNldFRpbWVvdXQoKCkgPT4ge1xyXG4gICAgICAgICAgICAgICAgaGVscGVyRWxlbWVudC5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xyXG4gICAgICAgICAgICB9LCA1KSAgIFxyXG4gICAgICAgICAgICBicmVhaztcclxuICAgICAgICBjYXNlIFwiYWdhaW5cIjpcclxuICAgICAgICAgICAgaGVscGVyVGV4dC50ZXh0Q29udGVudCA9IFwiWW91IGNhbiBkbyBpdCFcIjtcclxuICAgICAgICAgICAgYnJlYWs7XHJcbiAgICAgICAgY2FzZSBcImRlc2lnbmVyTW9kZVwiOlxyXG4gICAgICAgICAgICBoZWxwZXJUZXh0LnRleHRDb250ZW50ID0gXCJGaW5kIGFsbCBncmVlbiBjYXJkcyFcIjtcclxuICAgICAgICAgICAgYnJlYWs7XHJcbiAgICAgICAgZGVmYXVsdDpcclxuICAgICAgICAgICAgaGVscGVyVGV4dC50ZXh0Q29udGVudCA9IFwiSGkhIEknbSBtci5NZW1vLiBMZXQncyBwbGF5IVwiO1xyXG4gICAgfVxyXG5cclxufVxyXG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/util.js\n");
+
+/***/ })
+
+/******/ });

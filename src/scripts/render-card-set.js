@@ -1,5 +1,6 @@
 import * as utilFunc from './util.js';
-import * as helperFunc from './helper-func.js'
+import * as helperFunc from './helper-func.js';
+import { toggleCard } from './toggle-card.js';
 
 const cardsSet = document.getElementById('cards');
 
@@ -11,17 +12,15 @@ const levelElement = document.getElementById('levels');
 export let numberOfPairs;
 export let cards;
 
-
-
 export function renderCardsSet () {
     cards = null;
 
-    helperFunc.helperTexts("rules");
+    helperFunc.helperTextDOM("rules");
     greetElement.style.display = "none";
     helperElement.style.display = "block";
 
     if (cardsSet.firstChild) {
-        helperFunc.helperTexts("again");
+        helperFunc.helperTextDOM("again");
         utilFunc.cleanParent(cardsSet);
     }
 
@@ -46,7 +45,7 @@ export function renderCardsSet () {
     }
     
     cards = document.querySelectorAll(".card");
-    cards.forEach(el => el.addEventListener('click', utilFunc.toggleCard.bind(null, el)));
+    cards.forEach(el => el.addEventListener('click', toggleCard.bind(null, el)));
 
     utilFunc.randomColor(colorset);
 }

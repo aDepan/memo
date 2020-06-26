@@ -1,4 +1,4 @@
-import {amountStepsToWin} from './util.js';
+import {amountStepsToWin} from './toggle-card.js';
 
 
 const backdropElement = document.getElementById('backdrop');
@@ -13,35 +13,51 @@ export function showRules () {
     confirmRulesBtn.addEventListener('click', hideRulesWindow);
 }
 
-
 const hideRulesWindow = () => {
     backdropElement.style.display = "none";
     rulesWindow.style.display = "none";
 }
 
 export function helperTexts (gameEvent) {
-    let helperText = document.getElementById('memo-helper-text');
+    let memoText;
     switch (gameEvent) {
         case "rules": 
-            helperText.textContent = "Do you know how to play? \n No? Click me!";
-            helperElement.addEventListener('click', showRules);
+            memoText = "Do you know how to play? \n No? Click me!";
             break;
         case "win":
-            helperElement.removeEventListener('click',showRules);
-            helperText.textContent = `Congrats! You've found all pairs! \n It took ${amountStepsToWin} steps for you.`;
-            helperElement.style.display = "none";
-            setTimeout(() => {
-                helperElement.style.display = "block";
-            }, 5)   
+            memoText = `Congrats! You've found all pairs! \n It took ${amountStepsToWin} steps for you.`;
             break;
         case "again":
-            helperText.textContent = "You can do it!";
+            memoText = "You can do it!";
             break;
         case "designerMode":
-            helperText.textContent = "Find all green cards!";
+            memoText = "Find all green cards!";
             break;
         default:
-            helperText.textContent = "Hi! I'm mr.Memo. Let's play!";
+            memoText = "Hi! I'm mr. Memo. Let's play!";
+    }
+    return memoText;   
+}
+
+function addAnimation () {
+    helperElement.style.display = "none";
+    setTimeout(() => {
+        helperElement.style.display = "block";
+    }, 5)   
+}
+
+export function helperTextDOM (gameEvent) {
+    let helperTextEl = document.getElementById('memo-helper-text');
+
+    let memoText = helperTexts(gameEvent);
+
+    if (gameEvent === 'rules') {
+        helperElement.addEventListener('click', showRules);
     }
 
+    if (gameEvent === 'win') {
+        addAnimation();
+    }
+
+    helperTextEl.textContent = memoText;
 }

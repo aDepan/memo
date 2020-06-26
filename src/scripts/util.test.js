@@ -1,11 +1,11 @@
 import {pickLevel} from './util.js';
 
-test('test1', () => {
-    const results= pickLevel('easy');
-    expect(results[0]).toBe(4);
+test('Chosen correct number of pairs', () => {
+    const results= pickLevel('medium');
+    expect(results[0]).toBe(6);
 })
 
-test('test1', () => {
-    const results= pickLevel('easy');
+test('Chosen correct colorset', () => {
+    const results= pickLevel('medium');
     expect(results[1]).toBe('basic');
 })
